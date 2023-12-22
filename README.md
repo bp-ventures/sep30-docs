@@ -148,10 +148,10 @@ sequenceDiagram
         alt Account found
             Note over W: Account is registered in both<br>recovery servers, so we can proceed<br>to recover it.
             Note over W: Generate a new Stellar keypair<br>to be the device key
-            Note over W Build Set-Options envelope,<br>that sets the signers, weights and thresholds<br>
-            W->>RS1: POST /sep30/accounts/{address}/sign/{signer of first recovery server (see registration flow)}<br>Bearer {access_token_1}<br>Auth method type: access_token_1.auth_method_type<br>Auth method value: access_token_1.auth_method_value
+            Note over W: Build Set-Options envelope,<br>that sets the signers, weights and thresholds<br>
+            W->>RS1: POST /sep30/accounts/{address}/sign/{signer of first recovery server}<br>Bearer {access_token_1}<br>Auth method type: access_token_1.auth_method_type<br>Auth method value: access_token_1.auth_method_value
             RS1-->>W: Signature
-            W->>RS2: POST /sep30/accounts/{address}/sign/{signer of second recovery server (see registration flow)}<br>Bearer {access_token_2}<br>Auth method type: access_token_2.auth_method_type<br>Auth method value: access_token_2.auth_method_value
+            W->>RS2: POST /sep30/accounts/{address}/sign/{signer of second recovery server}<br>Bearer {access_token_2}<br>Auth method type: access_token_2.auth_method_type<br>Auth method value: access_token_2.auth_method_value
             RS2-->>W: Signature
             Note over W: Add signatures to the Set-Options envelope
             W->>S: Submit Set-Options transaction

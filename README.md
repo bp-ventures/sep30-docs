@@ -1,23 +1,26 @@
 # BPV Stellar Blockchain SEP-30 Key Management for Blockchains Documentation
 
-This repository contains documentation for BP Ventures Stellar SEP-30 implementation.  
+This repository contains documentation for BP Ventures Stellar XLM SEP-30 implementation.  
 Stellar has [a reference implementation in Golang](https://github.com/stellar/go/tree/master/exp/services/recoverysigner),
 but it's tightly integrated with Firebase and Twilio.  
 BPV's SEP-30 implementation is more flexible and allows many types of authentication,
 including Email, GitHub, and other social providers (Apple, Github, Google, Facebook, Microsoft).
 
+### Playground
+- [Playground 🔗](https://sep30-demo.bpventures.us/)
+  
+### Other links
 - [The Future of UI & Key Management for Blockchain wallets in 2024](https://p.bpventures.us/blog/the-future-of-ui-and-keymanagement-for-blockchain-wallets-in-2024/)
 - [SEP-30 Specification 🔗](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0030.md)
 - [Registration Flow](#registration-flow)
 - [Recovery Flow](#recovery-flow)
-- [Playground 🔗](https://sep30-demo.bpventures.us/)
 - [Stellar Article](https://stellar.org/blog/developers/sep-30-recoverysigner-user-friendly-key-management)
 - [Stellar Youtube presentation](https://www.youtube.com/watch?v=wpB6ZT2aOFs)
 - [User Friendly Key Management with SEP-30 Recoverysigner](https://leighmcculloch.com/talks/user-friendly-key-management-with-sep-30-recoverysigner/)
 - [SEP-30 & the Importance of Key-Management and Recovery](https://leighmcculloch.com/talks/sep-30-and-the-importance-of-key-management-and-recovery/)
 - [Stellar Presentation Notes](https://leighmcculloch.com/talks/user-friendly-key-management-with-sep-30-recoverysigner/Slides%20and%20Notes.pdf)
 
-### To use the playground here is the sequence we recommend
+### Stellar SEP 30 Playground Wallet Registration
 - Click New Account
 - Click Fund account to receive Stellar XLM 
 - Copy the Connected account Key Pair to a text editor for temporary storage
@@ -26,11 +29,10 @@ including Email, GitHub, and other social providers (Apple, Github, Google, Face
 - confirm your email
 - Click Register 2 (Github) - Note in production this can be Google Authenticator (OTP), Github, Apple, Google or one of many other services
 - Sign in to the social account
-
 - Note for this process there will not be a device key generated - we may do so in the future
 - We do not support SMS or phone number in this version as we have found the costs may outweigh the benefits to send SMS to some developing countries
 
-###  Recovery Process
+###  Stellar SEP30 Wallet Recovery Process
 - basically SHIFT + CTRL + R to clear the browser
 - copy in the public key (note in production they can recover using email address and not just public key)
 - follow the recovery steps which are pretty self evident
@@ -44,7 +46,7 @@ Other notes:
 - Potentially Passkey Biometric login (Face/Fingerprint)
 
    
-## Registration Flow
+## Stellar Wallet Registration Flow
 
 This flow assumes:
 - A Stellar Wallet compatible with SEP-30 and pre-configured to use two BPV SEP-30 recovery servers
@@ -153,7 +155,7 @@ sequenceDiagram
     end
 ```
 
-## Recovery Flow
+## Stellar Wallet Recovery Flow
 
 This flow assumes:
 - A Stellar Wallet compatible with SEP-30 and pre-configured to use two BPV SEP-30 recovery servers

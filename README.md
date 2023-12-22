@@ -10,6 +10,31 @@ including Email, GitHub, and other social providers.
 - [Registration Flow](#registration-flow)
 - [Recovery Flow](#recovery-flow)
 - [Playground 🔗](https://sep30-demo.bpventures.us/)
+- [Stellar Article](https://stellar.org/blog/developers/sep-30-recoverysigner-user-friendly-key-management)
+- [Stellar Youtube presentation] (https://www.youtube.com/watch?v=wpB6ZT2aOFs)
+- [Stellar Presentation Notes](https://leighmcculloch.com/talks/user-friendly-key-management-with-sep-30-recoverysigner/Slides%20and%20Notes.pdf)
+
+### To use the playground here is the sequence we recommend
+- Click New Account
+- Click Fund account
+- Copy the Connected account Key Pair to a text editor for temporary storage
+- Click Configure severs
+- click Register 1 (email)
+- confirm your email
+- Click Register 2 (Github) - Note in production this can be Google Authenticator (OTP), Github, Apple, Google or one of many other services
+- Sign in to the social account
+
+- Note for this process there will not be a device key generated - we may do so in the future
+
+###  Recovery Process
+- basically SHIFT + CTRL + R to clear the browser
+- copy in the public key (note in production they can recover using email address and not just public key)
+- follow the recovery steps which are pretty self evident
+
+Other notes:
+- for support or feedback pleaese email support@bpventures.us
+- We would love to support you on your next project!
+ 
 
 ## Registration Flow
 

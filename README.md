@@ -6,6 +6,7 @@ but it's tightly integrated with Firebase and Twilio.
 BPV's SEP-30 implementation is more flexible and allows many types of authentication,
 including Email, GitHub, and other social providers (Apple, Github, Google, Facebook, Microsoft).
 
+- [The Future of UI & Key Management for Blockchain wallets in 2024](https://p.bpventures.us/blog/the-future-of-ui-and-keymanagement-for-blockchain-wallets-in-2024/)
 - [SEP-30 Specification 🔗](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0030.md)
 - [Registration Flow](#registration-flow)
 - [Recovery Flow](#recovery-flow)

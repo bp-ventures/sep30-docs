@@ -2,8 +2,8 @@
 
 This repository contains documentation for BP Ventures SEP-30 implementation.  
 Stellar has [a reference implementation in Golang](https://github.com/stellar/go/tree/master/exp/services/recoverysigner),
-but it's tightly integrated with Firebase and Twilio. BPV's SEP-30
-implementation is more flexible and allows many types of authentication,
+but it's tightly integrated with Firebase and Twilio.  
+BPV's SEP-30 implementation is more flexible and allows many types of authentication,
 including Email, GitHub, and other social providers.
 
 - [SEP-30 Specification 🔗](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0030.md)

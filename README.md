@@ -132,7 +132,7 @@ This flow assumes:
 ```mermaid
 sequenceDiagram
     participant U as User
-    participant W as Retail Wallet
+    participant W as Stellar Wallet
     participant RS1 as Recovery Server (Email)
     participant RS2 as Recovery Server (GitHub)
     participant S as Stellar Blockchain

@@ -1,10 +1,10 @@
-# BP Ventures SEP-30 Documentation
+# BPV Stellar Blockchain SEP-30 Documentation
 
-This repository contains documentation for BP Ventures SEP-30 implementation.  
+This repository contains documentation for BP Ventures Stellar SEP-30 implementation.  
 Stellar has [a reference implementation in Golang](https://github.com/stellar/go/tree/master/exp/services/recoverysigner),
 but it's tightly integrated with Firebase and Twilio.  
 BPV's SEP-30 implementation is more flexible and allows many types of authentication,
-including Email, GitHub, and other social providers.
+including Email, GitHub, and other social providers (Apple, Github, Google, Facebook, Microsoft).
 
 - [SEP-30 Specification 🔗](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0030.md)
 - [Registration Flow](#registration-flow)
@@ -16,7 +16,7 @@ including Email, GitHub, and other social providers.
 
 ### To use the playground here is the sequence we recommend
 - Click New Account
-- Click Fund account
+- Click Fund account to receive Stellar XLM 
 - Copy the Connected account Key Pair to a text editor for temporary storage
 - Click Configure severs
 - click Register 1 (email)
@@ -25,6 +25,7 @@ including Email, GitHub, and other social providers.
 - Sign in to the social account
 
 - Note for this process there will not be a device key generated - we may do so in the future
+- We do not support SMS or phone number in this version as we have found the costs may outweigh the benefits to send SMS to some developing countries
 
 ###  Recovery Process
 - basically SHIFT + CTRL + R to clear the browser
@@ -34,8 +35,12 @@ including Email, GitHub, and other social providers.
 Other notes:
 - for support or feedback pleaese email support@bpventures.us
 - We would love to support you on your next project!
- 
 
+## Plans for this Project
+- add additional social logins
+- Potentially Passkey Biometric login (Face/Fingerprint)
+
+   
 ## Registration Flow
 
 This flow assumes:

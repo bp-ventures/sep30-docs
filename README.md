@@ -1,4 +1,4 @@
-# BPV Stellar Blockchain SEP-30 Key Management for Blockchains Documentation
+# BPV Stellar Blockchain SEP-30 Key Management Documentation
 
 This repository contains documentation for BP Ventures Stellar XLM SEP-30 implementation.  
 Stellar has [a reference implementation in Golang](https://github.com/stellar/go/tree/master/exp/services/recoverysigner),

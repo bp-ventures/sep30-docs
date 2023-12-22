@@ -1,4 +1,4 @@
-# BPV Stellar Blockchain SEP-30 Documentation
+# BPV Stellar Blockchain SEP-30 Key Management for Blockchains Documentation
 
 This repository contains documentation for BP Ventures Stellar SEP-30 implementation.  
 Stellar has [a reference implementation in Golang](https://github.com/stellar/go/tree/master/exp/services/recoverysigner),
@@ -11,7 +11,9 @@ including Email, GitHub, and other social providers (Apple, Github, Google, Face
 - [Recovery Flow](#recovery-flow)
 - [Playground 🔗](https://sep30-demo.bpventures.us/)
 - [Stellar Article](https://stellar.org/blog/developers/sep-30-recoverysigner-user-friendly-key-management)
-- [Stellar Youtube presentation] (https://www.youtube.com/watch?v=wpB6ZT2aOFs)
+- [Stellar Youtube presentation](https://www.youtube.com/watch?v=wpB6ZT2aOFs)
+- [User Friendly Key Management with SEP-30 Recoverysigner](https://leighmcculloch.com/talks/user-friendly-key-management-with-sep-30-recoverysigner/)
+- [SEP-30 & the Importance of Key-Management and Recovery](https://leighmcculloch.com/talks/sep-30-and-the-importance-of-key-management-and-recovery/)
 - [Stellar Presentation Notes](https://leighmcculloch.com/talks/user-friendly-key-management-with-sep-30-recoverysigner/Slides%20and%20Notes.pdf)
 
 ### To use the playground here is the sequence we recommend

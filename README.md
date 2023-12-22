@@ -38,7 +38,7 @@ including Email, GitHub, and other social providers (Apple, Github, Google, Face
 - follow the recovery steps which are pretty self evident
 
 Other notes:
-- for support or feedback pleaese email support@bpventures.us
+- for support or feedback please email support@bpventures.us
 - We would love to support you on your next project!
 
 ## Plans for this Project

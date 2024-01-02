@@ -12,8 +12,8 @@ including Email, GitHub, and other social providers (Apple, Github, Google, Face
 ### Other links
 - [The Future of UI & Key Management for Blockchain wallets in 2024](https://p.bpventures.us/blog/the-future-of-ui-and-keymanagement-for-blockchain-wallets-in-2024/)
 - [SEP-30 Specification 🔗](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0030.md)
-- [Registration Flow](#registration-flow)
-- [Recovery Flow](#recovery-flow)
+- [Registration Flow](#stellar-wallet-registration-flow)
+- [Recovery Flow](#stellar-wallet-recovery-flow)
 - [Stellar Article](https://stellar.org/blog/developers/sep-30-recoverysigner-user-friendly-key-management)
 - [Stellar Youtube presentation](https://www.youtube.com/watch?v=wpB6ZT2aOFs)
 - [User Friendly Key Management with SEP-30 Recoverysigner](https://leighmcculloch.com/talks/user-friendly-key-management-with-sep-30-recoverysigner/)
@@ -32,7 +32,7 @@ including Email, GitHub, and other social providers (Apple, Github, Google, Face
 - Note for this process there will not be a device key generated - we may do so in the future
 - We do not support SMS or phone number in this version as we have found the costs may outweigh the benefits to send SMS to some developing countries
 
-###  Stellar SEP30 Wallet Recovery Process
+### Stellar SEP30 Wallet Recovery Process
 - basically SHIFT + CTRL + R to clear the browser
 - copy in the public key (note in production they can recover using email address and not just public key)
 - follow the recovery steps which are pretty self evident
@@ -61,7 +61,6 @@ sequenceDiagram
     participant RS1 as Recovery Server (Email)
     participant RS2 as Recovery Server (GitHub)
     participant S as Stellar Blockchain
-    participant SS as Sponsor Server
     U->>W: Clicks "New Wallet"
     U->>W: Clicks "Register"
     Note over W: Now, we need to register in the first<br>recovery server, which<br>requires email authentication.
@@ -118,8 +117,8 @@ sequenceDiagram
     end
     Note over W: At this point, the "GET /authorize/token/{id}"<br>will contain access_token (let's call it access_token_2),<br>which is a<br>JWT with some information
     Note over W: Stop calling GET /authorize/token/{id}
-    W->>SS: POST /sponsor/submit
-    SS-->>W: Signed envelope to sponsor the account
+    W->>RS1: POST /sponsor/new<br>Bearer {access_token_1}
+    RS1-->>W: Signed envelope to sponsor the account
     W->>S: Submit transaction
     Note over W: Account is sponsored (funded)
     Note over W: Now we need to get SEP-10 tokens from both recovery servers

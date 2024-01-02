@@ -1,9 +1,7 @@
 # BPV Stellar Blockchain SEP-30 Key Management Documentation
 
-This repository contains documentation for BP Ventures Stellar XLM SEP-30 implementation.  
-Stellar has [a reference implementation in Golang](https://github.com/stellar/go/tree/master/exp/services/recoverysigner),
-but it's tightly integrated with Firebase and Twilio.  
-BPV's SEP-30 implementation is more flexible and allows many types of authentication,
+This repository contains documentation for BP Ventures Stellar XLM SEP-30 implementation.   
+BPV's SEP-30 implementation is flexible and allows many types of authentication,
 including Email, GitHub, and other social providers (Apple, Github, Google, Facebook, Microsoft).
 
 ### Motivation & Special features
@@ -28,13 +26,15 @@ This gives Wallets a rich set of options for deciding which recovery method to p
 ### Other links
 - [The Future of UI & Key Management for Blockchain wallets in 2024](https://p.bpventures.us/blog/the-future-of-ui-and-keymanagement-for-blockchain-wallets-in-2024/)
 - [SEP-30 Specification 🔗](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0030.md)
-- [Registration Flow](#stellar-wallet-registration-flow)
-- [Recovery Flow](#stellar-wallet-recovery-flow)
 - [Stellar Article](https://stellar.org/blog/developers/sep-30-recoverysigner-user-friendly-key-management)
 - [Stellar Youtube presentation](https://www.youtube.com/watch?v=wpB6ZT2aOFs)
 - [User Friendly Key Management with SEP-30 Recoverysigner](https://leighmcculloch.com/talks/user-friendly-key-management-with-sep-30-recoverysigner/)
 - [SEP-30 & the Importance of Key-Management and Recovery](https://leighmcculloch.com/talks/sep-30-and-the-importance-of-key-management-and-recovery/)
-- [Stellar Presentation Notes](https://leighmcculloch.com/talks/user-friendly-key-management-with-sep-30-recoverysigner/Slides%20and%20Notes.pdf)
+
+### Specific to our implementation
+- [Registration Flow](#stellar-wallet-registration-flow)
+- [Recovery Flow](#stellar-wallet-recovery-flow)
+- [Swagger docs](https://sep30-demo.bpventures.us/docs#/)
 
 ### Stellar SEP 30 Playground Wallet Registration
 - Click New Account

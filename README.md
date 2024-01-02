@@ -8,6 +8,7 @@ including Email, GitHub, and other social providers (Apple, Github, Google, Face
 
 ### Playground
 - [Playground 🔗](https://sep30-demo.bpventures.us/)
+- [How to use the playgroind](#stellar-sep-30-playground-wallet-registration)
   
 ### Other links
 - [The Future of UI & Key Management for Blockchain wallets in 2024](https://p.bpventures.us/blog/the-future-of-ui-and-keymanagement-for-blockchain-wallets-in-2024/)

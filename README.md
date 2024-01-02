@@ -6,6 +6,21 @@ but it's tightly integrated with Firebase and Twilio.
 BPV's SEP-30 implementation is more flexible and allows many types of authentication,
 including Email, GitHub, and other social providers (Apple, Github, Google, Facebook, Microsoft).
 
+### Motivation & Special features
+
+Although recovery using email or phone is very common, it's not always available or reliable.  
+Phone registration/recovery is usually done by sending an SMS with a code to the user. SMS is a widely available option, but it can get very expensive, as sending a SMS sometimes can cost a few dollars, specially when sending between different countries.
+Email is also widely available, but there can be issues as well (it's not uncommon for emails to not get received by the recipient).
+To take advantage of the many modern authentication mechanisms of today, we at BPV developed a SEP-30 recovery server that supports many different types of authentication:
+- Email + code
+- Email + password (with email confirmation link)
+- Phone + SMS code
+- Social logins (GitHub, Facebook, etc)
+- TOTP (in development)
+- ...and many others are planned to be added
+
+This gives Wallets a rich set of options for deciding which recovery method to provide for their users. By using BPV SEP-30 server you also get access to our consulting services and development support.
+
 ### Playground
 - [Playground 🔗](https://sep30-demo.bpventures.us/)
 - [How to use the playgroind](#stellar-sep-30-playground-wallet-registration)

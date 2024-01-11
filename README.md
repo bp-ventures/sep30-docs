@@ -22,7 +22,7 @@ This gives Wallets a rich set of options for deciding which recovery method to p
 - [Playground 🔗](https://sep30-demo.bpventures.us/)
 - [How to use the playground](#stellar-sep-30-playground-wallet-registration)
 
-[![Improving wallets with SEP-30](https://github.com/bp-ventures/sep30-docs/assets/17188302/8e2194d7-4ca0-47b9-8f37-cee3b8851f03)](https://www.youtube.com/watch?v=NzTqTI8r6IY)
+[![Improving wallets with SEP-30](https://github.com/bp-ventures/sep30-docs/assets/17188302/c47a00b8-038d-40ca-92fe-985451db9f23)](https://www.youtube.com/watch?v=NzTqTI8r6IY)
 
 
 

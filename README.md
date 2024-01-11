@@ -10,10 +10,9 @@ Although recovery using email or phone is very common, it's not always available
 Phone registration/recovery is usually done by sending an SMS with a code to the user. SMS is a widely available option, but it can get very expensive, as sending a SMS sometimes can cost a few dollars, specially when sending between different countries.
 Email is also widely available, but there can be issues as well (it's not uncommon for emails to not get received by the recipient).
 To take advantage of the many modern authentication mechanisms of today, we at BPV developed a SEP-30 recovery server that supports many different types of authentication:
-- Email + code
-- Email + password (with email confirmation link)
-- Phone + SMS code
-- Social logins (GitHub, Facebook, etc)
+- Email + SMS + Social Login
+- Email + SMS code
+- Social logins (Apple, Google, Facebook, GitHub, etc)
 - TOTP (in development)
 - ...and many others are planned to be added
 
@@ -21,7 +20,13 @@ This gives Wallets a rich set of options for deciding which recovery method to p
 
 ### Playground
 - [Playground 🔗](https://sep30-demo.bpventures.us/)
-- [How to use the playgroind](#stellar-sep-30-playground-wallet-registration)
+- [How to use the playground](#stellar-sep-30-playground-wallet-registration)
+
+[![Improving wallets with SEP-30](https://github.com/bp-ventures/sep30-docs/assets/17188302/8e2194d7-4ca0-47b9-8f37-cee3b8851f03)](https://www.youtube.com/watch?v=NzTqTI8r6IY)
+
+
+
+
   
 ### Other links
 - [The Future of UI & Key Management for Blockchain wallets in 2024](https://p.bpventures.us/blog/the-future-of-ui-and-keymanagement-for-blockchain-wallets-in-2024/)
